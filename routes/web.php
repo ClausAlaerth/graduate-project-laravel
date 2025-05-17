@@ -6,6 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("Oi/{texto}", function ($text) {
+Route::get("oi/{texto}", function ($text) {
     echo "Oi, " . $text;
 });
