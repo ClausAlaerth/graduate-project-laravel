@@ -21,4 +21,4 @@ Route::get("/login", [AuthController::class, "showLoginForm"])->name("login.show
 Route::post("/login", [AuthController::class, "processLogin"])->name("login.process");
 
 // First project: Login Auth - Admin area
-Route::post("/admin", [AuthController::class, "adminArea"])->name("admin.area");
+Route::get("/admin", [AuthController::class, "adminArea"])->name("admin.area");
